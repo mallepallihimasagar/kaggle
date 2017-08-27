@@ -15,3 +15,7 @@ g = sns.factorplot(x="class", y="survived", hue="sex", data=titanic,
                    size=6, kind="bar", palette="muted")
 g.despine(left=True)
 g.set_ylabels("survival probability")
+
+#changes to the file for github
+
+
