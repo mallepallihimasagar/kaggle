@@ -22,7 +22,7 @@ print(np.unique(y))
 train = train_df.drop(['Class'], axis=1)
 pid = test_df['ID'].values
 df_all = pd.concat((train, test_df), axis=0, ignore_index=True)
-df_all["Text"] = df_all["Text"].apply(lambda x: x[0:2000]) + df_all["Text"].apply(lambda x: x[len(x) - 1000:len(x)])
+# df_all["Text"] = df_all["Text"].apply(lambda x: x[0:2000]) + df_all["Text"].apply(lambda x: x[len(x) - 1000:len(x)])
 gen_var_lst = sorted(list(train.Gene.unique()) + list(train.Variation.unique()))
 print(len(gen_var_lst))
 train = df_all.iloc[:len(train)]
